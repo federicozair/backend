@@ -1,2 +1,6 @@
-<h1>Bienvenido a Mi Ecommerce</h1>
-<p>Este es un ejemplo de Handlebars funcionando.</p>
+<h1>{{title}}</h1>
+<ul>
+  {{#each products}}
+    <li>{{this.id}} - {{this.name}} - {{this.price}}</li>
+  {{/each}}
+</ul>
